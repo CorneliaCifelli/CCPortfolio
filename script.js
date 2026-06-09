@@ -331,7 +331,7 @@ const setupMediaGalleryPage = async () => {
 
   const mediaPaths = [...new Set(MEDIA_GALLERY_FILES)]
     .filter(isSupportedMedia)
-    .map((file) => `/CCFreelanceProject/images/gallery/${file}`);
+    .map((file) => `/CCPortfolio/images/gallery/${file}`);
   const allMediaItems = mediaPaths.map((path) => ({ path, type: mediaTypeFromPath(path) }));
   const imageItems = shuffleArray(allMediaItems.filter((item) => item.type === 'image'));
   const videoItems = allMediaItems.filter((item) => item.type === 'video');
